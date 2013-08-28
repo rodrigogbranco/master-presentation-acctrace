@@ -28,6 +28,8 @@
 
 \usepackage{multicol}
 
+\usepackage[round]{natbib}
+
 
 \title{Acessibilidade nas fases de Engenharia de Requisitos, Projeto e Codificação de Software: Uma ferramenta de apoio}
 
@@ -36,7 +38,7 @@
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
 %\author{F.~Author\inst{1} \and S.~Another\inst{2}}
-\author{Rodrigo G. de ~Branco \and Profª. Drª. Débora M. B. ~Paiva (Orientadora)}
+\author{\mbox{Rodrigo G. de ~Branco} \and \mbox{Profª. Drª. Débora M. B. ~Paiva (Orientadora)}}
 
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
@@ -100,7 +102,87 @@ Universidade Federal de Mato Grosso do Sul
 
 \subsection[Motivação]{Motivação}
 
+\begin{frame}
+\frametitle{Internet}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Importante meio de disseminação de informação
+  \item Ferramenta essencial nas atividades cotidianas
+  \item Alguns serviços disponibilizados \textbf{APENAS} por essa via \citep{irpf:13,tjce:11}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Utilização da Internet como apoio aos negócios}
+\framesubtitle{Benefícios \citep{oliveira:11}}
+
+\begin{itemize}
+  \item Disponibilidade de 24 horas por dia;
+  \item Possibilidade de acesso de todas as partes do planeta - ou fora dele? \citep{curiosity:13};
+  \item Necessidade de espaço físico e de infra-estrutura reduzidos (ex: bancos) para realizar;
+as atividades;
+  \item Custo de investimento inicial baixo, entre outros.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Acesso equalitário à informação}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Acesso homogêneo aos recursos da Internet \citep{5260918}
+  \item Única forma de acesso à informação por alguns grupos de usuários
+  \item Pessoas diferentes com problemas diferentes, equipamentos diferentes, \textit{softwares} diferentes e necessidades diferentes
+  \item Pessoas com deficiências são prejudicadas por soluções malfeitas
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Produto \textit{web} acessível}
+\framesubtitle{}
+
+\begin{itemize}
+  \item É difícil garantir um produto 100\% acessível
+  \item Domínio de estudo relativamente novo
+  \item Várias pesquisas na área \citep{lazar:04,brajnik:06,zeng:05}
+  \item Papel fundamental da Engenharia de \textit{Software} no processo de desenvolvimento
+  \item Os custos são menores quando a acessibilidade é considerada durante o processo de desenvolvimento
+do \textit{software} \citep{groves:11}
+\end{itemize}
+
+\end{frame}
+
 \subsection[Problema]{Problema}
+
+\begin{frame}
+\frametitle{Observações}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Integração de tópicos de Acessibilidade no processo de desenvolvimento \citep{springerlink:10.1007/978-3-642-02713-0,maia:10}
+  \item Rastreabilidade dos requisitos de acessibilidade
+  \item Muitos desenvolvedores não sabem como codificar de forma a tornar seus produtos acessíveis \citep{1630123,alves:11}
+  \item Desenvolvedores não estão satisfeitos com as ferramentas de apoio à acessibilidade disponíveis \citep{Trewin:2010:ACT:1805986.1806029}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Observações}
+\framesubtitle{Continuação\ldots}
+
+\begin{itemize}
+  \item Desenvolvedores estão insatisfeitos em utilizar ferramentas externas ao
+seu ambiente de desenvolvimento para efetuar a avaliação \citep{Trewin:2010:ACT:1805986.1806029}
+  \item As ferramentas nem sempre informam de forma objetiva as mudanças necessárias para fornecer um produto acessível \citep{groves:12}
+  \item A avaliação normalmente ocorre quando o produto já está pronto (Refatoramento)
+\end{itemize}
+
+\end{frame}
 
 \subsection[Objetivos]{Objetivos}
 
@@ -134,59 +216,71 @@ Universidade Federal de Mato Grosso do Sul
 
 \subsection[Trabalhos Futuros]{Trabalhos Futuros}
 
-\begin{frame}
-\frametitle{}
-\framesubtitle{Subtitles are optional}
+\section{Referências Bibliográficas}
 
-xx
-\begin{itemize}
-  \item
-  \item
-\end{itemize}
-\end{frame}
+\begin{frame}[allowframebreaks]
 
-\begin{frame}
-\frametitle{}
+\bibliographystyle{apalike}
 
-% You can create overlays
-\begin{itemize}
-  \item using the \texttt{pause} command:
-  \begin{itemize}
-    \item First item.
-    \pause
-    \item Second item.
-  \end{itemize}
-  \item using overlay specifications:
-  \begin{itemize}
-    \item<3-> First item.
-    \item<4-> Second item.
-  \end{itemize}
-  \item using the general \texttt{uncover} command:
-  \begin{itemize}
-    \uncover<5->{\item First item.}
-    \uncover<6->{\item Second item.}
-  \end{itemize}
-\end{itemize}
-\end{frame}
+\bibliography{sbc-template}
 
-\section*{Summary}
-
-\begin{frame}
-\frametitle<presentation>{Summary}
-
-\begin{itemize}
-  \item The \alert{first main message} of your talk in one or two lines.
-\end{itemize}
-
-% The following outlook is optional.
-\vskip0pt plus.5fill
-\begin{itemize}
-  \item Outlook
-  \begin{itemize}
-    \item Something you haven't solved.
-    \item Something else you haven't solved.
-  \end{itemize}
-\end{itemize}
 \end{frame}
 
 \end{document}
+
+% \begin{frame}
+% \frametitle{}
+% \framesubtitle{Subtitles are optional}
+% 
+% xx
+% \begin{itemize}
+%   \item
+%   \item
+% \end{itemize}
+% \end{frame}
+% 
+% \begin{frame}
+% \frametitle{}
+% 
+% % You can create overlays
+% \begin{itemize}
+%   \item using the \texttt{pause} command:
+%   \begin{itemize}
+%     \item First item.
+%     \pause
+%     \item Second item.
+%   \end{itemize}
+%   \item using overlay specifications:
+%   \begin{itemize}
+%     \item<3-> First item.
+%     \item<4-> Second item.
+%   \end{itemize}
+%   \item using the general \texttt{uncover} command:
+%   \begin{itemize}
+%     \uncover<5->{\item First item.}
+%     \uncover<6->{\item Second item.}
+%   \end{itemize}
+% \end{itemize}
+% \end{frame}
+% 
+% \section*{Summary}
+% 
+% \begin{frame}
+% \frametitle<presentation>{Summary}
+% 
+% \begin{itemize}
+%   \item The \alert{first main message} of your talk in one or two lines.
+% \end{itemize}
+% 
+% % The following outlook is optional.
+% \vskip0pt plus.5fill
+% \begin{itemize}
+%   \item Outlook
+%   \begin{itemize}
+%     \item Something you haven't solved.
+%     \item Something else you haven't solved.
+%   \end{itemize}
+% \end{itemize}
+% \end{frame}
+% 
+% \end{document}
