@@ -158,7 +158,7 @@ do \textit{software} \citep{groves:11}
 
 \subsection[Problema]{Problema}
 
-\begin{frame}
+\begin{frame}[allowframebreaks]
 \frametitle{Observações}
 \framesubtitle{}
 
@@ -167,24 +167,42 @@ do \textit{software} \citep{groves:11}
   \item Rastreabilidade dos requisitos de acessibilidade
   \item Muitos desenvolvedores não sabem como codificar de forma a tornar seus produtos acessíveis \citep{1630123,alves:11}
   \item Desenvolvedores não estão satisfeitos com as ferramentas de apoio à acessibilidade disponíveis \citep{Trewin:2010:ACT:1805986.1806029}
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Observações}
-\framesubtitle{Continuação\ldots}
-
-\begin{itemize}
   \item Desenvolvedores estão insatisfeitos em utilizar ferramentas externas ao
 seu ambiente de desenvolvimento para efetuar a avaliação \citep{Trewin:2010:ACT:1805986.1806029}
   \item As ferramentas nem sempre informam de forma objetiva as mudanças necessárias para fornecer um produto acessível \citep{groves:12}
-  \item A avaliação normalmente ocorre quando o produto já está pronto (Refatoramento)
+  \item A avaliação normalmente ocorre quando o produto já está pronto (Refatoramento)  
 \end{itemize}
 
 \end{frame}
 
 \subsection[Objetivos]{Objetivos}
+
+\begin{frame}
+\frametitle{Objetivos gerais}
+\framesubtitle{}
+
+\begin{itemize}
+ \item Estender o MTA, propondo uma metologia para a rastreabilidade dos requisitos de acessibilidade atravées do processo de desenvolvimento de \textit{software}
+ \item Permitir a associação explícita entre os requisitos de acessibilidade e os artefatos de documentação e, para cada associação, especificar uma ou mais técnicas de implementação de acessibilidade de acordo com o documento de conformidade em acessibilidade escolhido
+ \item Implementar uma ferramenta de suporte que seja integrada ao ambiente de desenvolvimento e que implemente os objetivos listados acima
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+\frametitle{Características desejáveis para a ferramenta}
+\framesubtitle{Partindo da pesquisa de \citet{Trewin:2010:ACT:1805986.1806029}}
+
+\begin{itemize}
+ \item Seja orientada ao desenvolvedor (a apresentação dos resultados nas ferramentas tradicionais são adequadas para avaliação e auditoria de sites, e não para desenvolvedores)
+ \item Seja integrada ao ambiente de desenvolvimento do desenvolvedor
+ \item Apresente informações objetivas e no momento em que o desenvolvedor desejar visualizar
+ \item Tenha relação direta entre os requisitos e casos de uso com a etapa de codificação
+ \item Permita que seja feita o rastreamento dos requisitos de acessibilidade, desde a sua concepção até as fases de codicação
+ \item Permita que o desenvolvedor consiga verificar, em nível de código, a associação dos requisitos e modelos
+\end{itemize}
+
+\end{frame}
 
 \section{Fundamentação Teórica}
  
