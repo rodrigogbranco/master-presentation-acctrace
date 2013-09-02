@@ -259,13 +259,201 @@ seu ambiente de desenvolvimento para efetuar a avaliação \citep{Trewin:2010:AC
 \framesubtitle{}
 
 \begin{itemize}
-  \item Começou com a \textit{Section 508}, em 1998 \citep{section508:98}
-  
+  \item Começou com a \textit{Section 508} (USA), em 1998 \citep{section508:98}
+\end{itemize}
+
+\begin{itemize}
+  \item Posteriormente\ldots
+  \begin{itemize}
+    \item DDA (UK) \citep{dda:95}
+    \item Leis 10.048/2000 e 10.098/2000 (BR)
+    \item entre outros\ldots
+   \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Documentos e padrões}
+\framesubtitle{W3C e WAI}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth]{./img/relation.jpg}
+	\caption{Documentos e relação com os desenvolvedores}
+	\label{fig:sub4}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Documentos e padrões}
+\framesubtitle{Breve descrição}
+
+\begin{itemize}
+  \item WCAG (1.0 e 2.0): Documento de referência com diretrizes e recomendações para implementação de acessibilidade
+  \item WAI-ARIA (1.0 - candidata): define como a funcionalidade do elemento deve ser entregue à tecnologia assistiva
+  \item ATAG (1.0 e 2.0 - rascunho): destinado aos desenvolvedores de ferramentas de autoria, para que o conteúdo gerado por estas ferramentas seja acessível
+  \item UAAG (1.0 e 2.0 - rascunho): destinado aos desenvolvedore de \textit{User Agents}
+  \item EARL (1.0 - rascunho): formato definido para expressar resultados de testes, principalmente por ferramentas de avaliação automática 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{WCAG 2.0}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Documento de referência
+  \item Fornece abordagens, técnicas, critérios de sucesso e testes
+  \item 3 níveis de prioridade (A, AA, AAA)
+  \item 14 diretrizes
+  \item Vários documentos derivados
+  \begin{itemize}
+   	\item CLF (CA) \citep{clf:13}
+   	\item NDA (IE) \citep{nda:13}
+   	\item eMag (BR) \citep{emag:13}
+   	\item Diretrizes de \textit{design} da Microsoft \citep{microsoft:11}   	
+   \end{itemize}
 \end{itemize}
 
 \end{frame}
 
 \subsection[Pesquisa Bibliográfica]{Pesquisa Bibliográfica}
+
+\begin{frame}
+\frametitle{Acessibilidade no contexto de Engenharia de \textit{Software}}
+\framesubtitle{Divisão das áreas de interesse}
+
+\begin{itemize}
+  \item Requisitos
+  \item Arquitetura
+  \item Navegação
+  \item Interface
+  \item Conteúdo
+  \item Avaliação
+  \item Processo de Desenvolvimento
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Principais artigos}
+\framesubtitle{Requisitos - \citet{Trewin:2010:ACT:1805986.1806029}}
+
+\begin{itemize}
+  \item Pesquisa com desenvolvedores da IBM
+  \item \textit{Status} das ferramentas de apoio à acessibilidade
+  \item \textit{Design}, testes e identificação de soluções tecnológicas é uma tarefa difícil
+  \item Os desenvolvedores não confiam nas informações fornecidas pela ferramenta
+  \item As informações fornecidas pelas ferramentas nem sempre são claras e objetivas
+  \item As ferramentas não são integradas ao ambiente de desenvolvimento
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Principais artigos}
+\framesubtitle{Requisitos - \citet{analuizadias:2010}}
+
+\begin{itemize}
+  \item Inserção de acessibilidade nas etapas de desenvolvimento de \textit{software}
+  \item Pesquisa nos principais portais (Springer, ACM, IEEE, Elsevier, Wiley e Scielo)
+  \item Muitas pesquisas referentes a testes com usuários
+  \item Nenhuma com instalação de \textit{software}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Principais artigos}
+\framesubtitle{Arquitetura - \citet{Fuertes:2011:DHW:1969289.1969294}}
+
+\begin{itemize}
+  \item \textit{Hera-FFX} - Hera (WCAG 2.0) para Firefox
+  \item Características desejáveis de uma ferramenta de avaliação:
+  	\begin{multicols}{2}
+  	\begin{itemize}
+  	 	\item Avaliação preliminar automática
+  	 	\item Suporte para preenchimento manual
+  	 	\item Modicação da página de apresentação
+  	 	\item Exibição do código anotado
+  	 	\item Avaliação de páginas locais
+  	 	\item Avaliação de páginas com acesso restrito
+  	 	\item Avaliação de renderização de páginas
+  	 	\item Geração de relatórios
+  	 	\item Suporte para treinamento
+  	 	\item Capacidade de multi-sessão
+  	 	\item Flexibilidade
+  	 \end{itemize}
+  	\end{multicols}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Principais artigos}
+\framesubtitle{Interface - \citet{Halbach:2010:TCA:1747589.1747607}}
+
+\begin{itemize}
+  \item Deficiência cognitiva
+  \item WCAG cobre uma área limitada dessas deficiências
+  \item O autor propôs um conjunto de princípios de \textit{design} para cada sub-área
+  \item Padrões de design pouco usuais em desenvolvimento de sites
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Principais artigos}
+\framesubtitle{Avaliação - \citet{Vigo:2011:AWA:1963660.1963798}}
+
+\begin{itemize}
+  \item Métricas de acessibilidade
+  \item Qual é a ``qualidade'' das métricas existentes
+  \item Algumas métricas são difíceis de implementar e testar
+  \item Melhores métricas para o quesito \textit{validez}: WAQM, PM e WAB
+  \item PM não teve um bom desempenho para o quesito \textit{adequação}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Principais artigos}
+\framesubtitle{Avaliação - \citet{Brajnik:2009:VRW:1639642.1639666}}
+
+\begin{itemize}
+  \item Validade das diretrizes de acessibilidade (WCAG 1.0 e 2.0)
+  \item Um mesmo conjunto de diretrizes de acessibilidade produzirá os mesmos resultados, se conduzido por pessoas ou ferramentas diferentes?
+  \item Se sim, qual é a qualidade dos métodos de avaliação utilizados e o qu ``testáveis'' são as diretrizes de acessibilidade
+  \item O autor concluiu que:
+  \begin{itemize}
+    \item As diretrizes doWCAG 1.0 são mais confiáveis do que as diretrizes do WCAG 2.0
+    \item O nível de confiabilidade das diretrizes nãoo pode ser considerado alto, já que este nível não ultrapassou 80\%
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+\frametitle{Principais artigos}
+\framesubtitle{Avaliação - \citet{freire:12}}
+
+\begin{itemize}
+  \item Estudo com grupos específicos de usuários com deficiência
+  \item Quais são as características principais dos problemas de acessibilidade encontrados?
+  \item Qual a relação entre utilizar uma medição de acessibilidade utilizando uma abordagem
+baseada no usuário e uma medição técnica baseada nas diretrizes do WCAG 1.0 e 2.0?
+  \item O autor concluiu que:
+  \begin{itemize}
+   	\item Os sites possuem variados níveis de barreiras, dependendo da deficiência que o usuário possui
+   	\item Não há uma correlação significativa entre as classificações das gravidades de problemas de usuários e os níveis de prioridades associadas aos \textit{checkpoints} e critérios de sucesso do WCAG 1.0
+   	\item Sites com altos níveis de conformidade técnica não implicam em sites isentos de problemas encontrados pelo usuário
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
 
 \subsection[MTA]{Acessibilidade no Processo de Desenvolvimento}
 
