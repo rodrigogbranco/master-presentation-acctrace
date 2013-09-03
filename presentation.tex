@@ -518,7 +518,7 @@ baseada no usuário e uma medição técnica baseada nas diretrizes do WCAG 1.0 
 \framesubtitle{Documento de Requisitos}
 
 \begin{itemize}
-  \item Saída da Avaliar os requisitos de acessibilidade de software gera o artefato Documento de requisitos de acessibilidade do software avaliados e aprovados
+  \item Saída da tarefa Avaliar os requisitos de acessibilidade de software gera o artefato Documento de requisitos de acessibilidade do software avaliados e aprovados
   \item Neste trabalho, mais um artefato é gerado => Documento de requisitos XMI/XML
   \item Formato legível por máquina
   \item Gerenciado por uma ferramenta CASE
@@ -540,12 +540,108 @@ baseada no usuário e uma medição técnica baseada nas diretrizes do WCAG 1.0 
   \item Pode-se utilizar um arquivo externo de mapeamento entre os requisitos e os modelos
   \begin{itemize}
     \item Possível se a estrutura dos arquivos de requisitos e dos modelos for previamente conhecida
+    \item Associação dos requisitos utilizando os identificadores da estrutura (para RDF, rdf:ID por exemplo)
+    \item Abordagem utilizada neste trabalho
   \end{itemize}
 \end{itemize}
 
 \end{frame}
 
+\begin{frame}
+\frametitle{Subprocesso 5 - Projeto de Software}
+\framesubtitle{}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/subprocesso5.png}
+	\caption{Tarefas para o Subprocesso de projeto de \textit{software} \citep{maia:10}}
+	\label{fig:sub5}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Subprocesso 5 - Projeto de Software}
+\framesubtitle{Inclusão de elementos de acessibilidade}
+
+\begin{itemize}
+  \item Saída da tarefa Avaliar a acessibilidade do projeto de software gera o artefato Projeto de software acessível
+  \item Neste trabalho, mais um artefato é gerado => Projeto de software no formato XML/XMI + itens de acessibilidade
+  \item Itens de acessibilidade estão mapeados em uma ontologia de acessibilidade \citep{aegis:13} (OWL 1.0)
+  \item A matriz de rastreabilidade parcial pode ser gerada
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Subprocesso 6 - Construção do Software}
+\framesubtitle{}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/subprocesso6.png}
+	\caption{Tarefas para o subprocesso de construção do \textit{software} \citep{maia:10}}
+	\label{fig:sub6}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Subprocesso 6 - Construção do Software}
+\framesubtitle{Especificando técnicas de acessibilidade e gerando código}
+
+\begin{itemize}
+  \item Se as técnicas de implementação ainda não foram vinculadas, este é o momento
+  \item WCAG 2.0 especifica as técnicas, mapeadas na ontologia
+  \item Geração de código \textit{stub} - Comentários personalizados:
+  	\begin{itemize}
+  	  \item A ferramenta de modelagem gera os códigos, e posteriormente, a ferramenta CASE proposta incluiria os comentários de rastreabilidade
+  	  \item A ferramenta CASE proposta substituiria o gerador de código, realizando todo o trabalho e gerando o código já comentado
+  	  \item O gerador de código é customizado para que gere o código e os comentários personalizados no mesmo instante (abordagem escolhida)
+  	\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Abordagem}
+\framesubtitle{Visão Geral}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/figuramagica.png}
+	\caption{Detalhamento dos Subprocessos do MTA para prover a rastreabilidade dos requisitos de acessibilidade de acordo com a abordagem adotada neste trabalho}
+	\label{fig:figuramagica}
+\end{figure}
+
+\end{frame}
+
 \subsection[Ferramentas e Tecnologias]{Ferramentas e Tecnologias}
+
+\begin{frame}
+\frametitle{Ferramentas e Tecnologias escolhidas}
+\framesubtitle{}
+
+\begin{itemize}
+  \item MTA - Processo de Desenvolvimento de Software com tarefas de acessibilidade
+  \item Eclipse Juno - IDE
+  \item Requirement Designer v0.8.0 - plugin de gerenciamento de requisitos
+  \item UML Designer v2.1.0 - plugin de modelagem UML
+  \item UML to Java Generator v1.0.2 - plugin de geração de código
+  \item Java JRE7 e JDK1.7 - Linguagem para desenvolvimento de plugins e código final do produto
+  \item Ontologia para implementação das diretrizes do WCAG 2.0
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Relacionamento dos elementos}
+\framesubtitle{}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/developmentNew2.png}
+	\caption{Associação das ferramentas e atores no contexto do trabalho}
+	\label{fig:desenvolvimento}
+\end{figure}
+
+\end{frame}
 
 \subsection[Construção da Ferramenta]{Construção da Ferramenta}
 
