@@ -691,6 +691,118 @@ baseada no usuário e uma medição técnica baseada nas diretrizes do WCAG 1.0 
 
 \end{frame}
 
+\begin{frame}
+\frametitle{AccTrace}
+\framesubtitle{Diagrama de classes}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/acctraceclassdiagram.png}
+	\caption{Diagrama de classes da ferramenta proposta (AccTrace)}
+	\label{fig:acctraceclassdiagram}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{AccTrace}
+\framesubtitle{Visões}
+
+\begin{itemize}
+  \item \textit{AccTrace Editor}
+  \item \textit{Requirement Associations}
+  \item \textit{Accessibility Specifications View}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{AccTrace}
+\framesubtitle{Visões}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/acctrace.png}
+	\caption{Visualização da ferramenta AccTrace na tela principal do Eclipse}
+	\label{fig:acctrace}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{AccTrace}
+\framesubtitle{Matriz de rastreabilidade}
+
+\begin{itemize}
+  \item Gerada usando o Apache ODF Toolkit \citep{odftoolkit:13}
+  \item São geradas 3 planilhas:
+  	\begin{itemize}
+  	  \item Requisitos x Modelos
+  	  \item Requisitos x Técnicas
+  	  \item Modelos x Técnicas
+  	\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{AccTrace}
+\framesubtitle{Matriz de rastreabilidade}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/matrixpart.png}
+	\caption{Parte da matriz de rastreabilidade gerada pela ferramenta}
+	\label{fig:matrixpart}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Plugin UML to Java Generator}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Utiliza o ponto de extensão do plugin \textit{Acceleo} \cite{acceleo:13}
+  \item Transforma modelos UML do plugin UML Designer em código Java
+  \item Alteração do deste plugin, para receber também um arquivo .acctrace, gerando assim comentários personalizados
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{AccTrace}
+\framesubtitle{Comentários personalizados}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/acctracecomment.png}
+	\caption{Comentário padrão AccTrace demonstrado utilizando o evento \textit{mouse hover}}
+	\label{fig:acctracecomment}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{AccTrace}
+\framesubtitle{Decodificação do comentário}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/commentrecovery.png}
+	\caption{Passos para recuperação das informações relevantes através de um comentário padrão AccTrace}
+	\label{fig:commentrecovery}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{AccTrace}
+\framesubtitle{Apresentação do comentário ao usuário}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/commentview.png}
+	\caption{Explicitação do comentário selecionado}
+	\label{fig:commentview}
+\end{figure}
+
+\end{frame}
+
 \section{Prova de Conceito}
 
 \subsection[Definição do Projeto]{Definição do Projeto}
