@@ -645,6 +645,52 @@ baseada no usuário e uma medição técnica baseada nas diretrizes do WCAG 1.0 
 
 \subsection[Construção da Ferramenta]{Construção da Ferramenta}
 
+\begin{frame}
+\frametitle{Plugin Requirement Designer}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Classes \textit{Repository, Category, Requirement}
+  \item Descritas como modelos EMF, podendo ser reaproveitadas
+\end{itemize}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.50\textheight,keepaspectratio]{./img/requirement_package_entities.png}
+	\caption{Diagrama de classes do plugin Requirement Designer}
+	\label{fig:reqdesigner}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Plugin UML Designer}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Utiliza a API do Eclispe (pacote org.eclipse.uml2.uml)
+  \item Os elementos são persistidos como modelos EMF
+  \item O plugin Requirement Designer lê o arquivo .uml (EMF), e pode ser associado aos requisitos  
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Ontologia de acessibilidade}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Descrita no padrão OWL 1.0
+  \item Manipulação utilizando a OWL API \citep{owlapi:13}
+\end{itemize}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.50\textheight,keepaspectratio]{./img/ontologyrelationship.png}
+	\caption{Relacionamento entre os elementos da ontologia}
+	\label{fig:ontologyrelationship}
+\end{figure}
+
+\end{frame}
+
 \section{Prova de Conceito}
 
 \subsection[Definição do Projeto]{Definição do Projeto}
