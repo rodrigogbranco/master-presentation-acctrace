@@ -182,7 +182,7 @@ seu ambiente de desenvolvimento para efetuar a avaliação \citep{Trewin:2010:AC
 \framesubtitle{}
 
 \begin{itemize}
- \item Estender o MTA, propondo uma metologia para a rastreabilidade dos requisitos de acessibilidade através do processo de desenvolvimento de \textit{software}
+ \item Estender o MTA, propondo uma metologia para a rastreabilidade dos requisitos de acessibilidade atravées do processo de desenvolvimento de \textit{software}
  \item Permitir a associação explícita entre os requisitos de acessibilidade e os artefatos de documentação e, para cada associação, especificar uma ou mais técnicas de implementação de acessibilidade de acordo com o documento de conformidade em acessibilidade escolhido
  \item Implementar uma ferramenta de suporte que seja integrada ao ambiente de desenvolvimento e que implemente os objetivos listados acima
 \end{itemize}
@@ -280,7 +280,7 @@ seu ambiente de desenvolvimento para efetuar a avaliação \citep{Trewin:2010:AC
 \begin{figure}[htbp] \centering
 	\includegraphics[width=\textwidth]{./img/relation.jpg}
 	\caption{Documentos e relação com os desenvolvedores}
-	\label{fig:sub4}
+	\label{fig:relation}
 \end{figure}
 
 \end{frame}
@@ -293,8 +293,7 @@ seu ambiente de desenvolvimento para efetuar a avaliação \citep{Trewin:2010:AC
   \item WCAG (1.0 e 2.0): Documento de referência com diretrizes e recomendações para implementação de acessibilidade
   \item WAI-ARIA (1.0 - candidata): define como a funcionalidade do elemento deve ser entregue à tecnologia assistiva
   \item ATAG (1.0 e 2.0 - rascunho): destinado aos desenvolvedores de ferramentas de autoria, para que o conteúdo gerado por estas ferramentas seja acessível
-  \item UAAG (1.0 e 2.0 - rascunho): destinado aos desenvolvedores de
-  \textit{User Agents}
+  \item UAAG (1.0 e 2.0 - rascunho): destinado aos desenvolvedore de \textit{User Agents}
   \item EARL (1.0 - rascunho): formato definido para expressar resultados de testes, principalmente por ferramentas de avaliação automática 
 \end{itemize}
 
@@ -487,6 +486,64 @@ baseada no usuário e uma medição técnica baseada nas diretrizes do WCAG 1.0 
 \section{Desenvolvimento}
 
 \subsection[Escopo - MTA]{Escopo - MTA}
+
+\begin{frame}
+\frametitle{Subprocessos Selecionados}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Subprocesso 4 - Análise de Requisitos de Software
+  \item Subprocesso 5 - Projeto de Software
+  \item Subprocesso 5 - Construção do Software
+  \item As tarefas de testes, presentes no Subprocesso 6, estão fora do escopo deste trabalho.
+  \item Especialista em Acessibilidade - Fundamental ao MTA!
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Subprocesso 4 - Análise de Requisitos de Software}
+\framesubtitle{}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/subprocesso4.png}
+	\caption{Tarefas para o subprocesso de Análise de Requisitos do \textit{software} \citep{maia:10}}
+	\label{fig:sub4}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Subprocesso 4 - Análise de Requisitos de Software}
+\framesubtitle{Documento de Requisitos}
+
+\begin{itemize}
+  \item Saída da Avaliar os requisitos de acessibilidade de software gera o artefato Documento de requisitos de acessibilidade do software avaliados e aprovados
+  \item Neste trabalho, mais um artefato é gerado => Documento de requisitos XMI/XML
+  \item Formato legível por máquina
+  \item Gerenciado por uma ferramenta CASE
+  \item Matriz de rastreabilidade de requisitos (método estático) \citep{guo:2009:OBI:1681515.1682933}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Subprocesso 4 - Análise de Requisitos de Software}
+\framesubtitle{Rastreabilidade em artefatos UML}
+
+\begin{itemize}
+  \item Pode-se utilizar \textit{Notas}, como no trabalho de \citet{Joonhoon:09}
+  \begin{itemize}
+    \item A ferramenta CASE leria os modelos (XML), efetuaria o parser e incluiria as notas no arquivo XML
+    \item O especialista em acessibilidade, através de ferramentas próprias de modelagem utilizadas no projeto, incluiria as notas, que posteriormente seriam associados utilizando a ferramenta CASE descrita anteriormente
+   \end{itemize}
+  \item Pode-se utilizar um arquivo externo de mapeamento entre os requisitos e os modelos
+  \begin{itemize}
+    \item Possível se a estrutura dos arquivos de requisitos e dos modelos for previamente conhecida
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
 
 \subsection[Ferramentas e Tecnologias]{Ferramentas e Tecnologias}
 
