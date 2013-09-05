@@ -807,15 +807,149 @@ baseada no usuário e uma medição técnica baseada nas diretrizes do WCAG 1.0 
 
 \subsection[Definição do Projeto]{Definição do Projeto}
 
+\begin{frame}
+\frametitle{Preparação}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Projeto utilizando o MTA como processo de desenvolvimento
+  \item Utilização do \textit{plugin AccTrace}
+  \item Projeto simples (buscador web)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Subprocessos 1 e 2}
+\framesubtitle{Elicitação dos Requisitos do Sistema e Análise de Requisitos do Sistema}
+
+\begin{itemize}
+  \item Identificação de requisitos do sistema
+  \item Seguir o padrão WCAG 2.0
+  \item Identificação de público-alvo, tecnologias e alternativas
+  \item Participação do Especialista em Acessibilidade para identificação de requisitos de acessibilidade
+\end{itemize}
+
+\end{frame}
+
 \subsection[Modelagem do Sistema]{Modelagem do Sistema}
 
+\begin{frame}
+\frametitle{Subprocessos 3 e 4}
+\framesubtitle{Projeto Arquitetural do Sistema e Análise de Requisitos do Software}
+
+\begin{itemize}
+  \item Decomposição do sistema em partes menores
+  \item Identificação e discriminação dos requisitos funcionais, requisitos não-funcionais, e requisitos de acessibilidade
+  \item 16 Requisitos identificados
+  \item Cadastro dos requisitos no \textit{plugin Requirement Designer}
+  \item Criação dos diagramas de caso de uso e classe no \textit{plugin UML Designer}
+  \item Associação dos diagramas e requisitos no \textit{plugin Requirement Designer}, visualizados no \textit{plugin AccTrace}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Subprocessos 3 e 4}
+\framesubtitle{Visualização do \textit{plugin AccTrace}}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/referenciascriadas.png}
+	\caption{Modelos UML e requisitos associados}
+	\label{fig:referenciascriadas}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Subprocesso 5}
+\framesubtitle{Projeto de Software}
+
+\begin{itemize}
+  \item Especificação dos critérios de sucesso (WCAG 2.0)
+  \item Geração da matriz de rastreabilidade
+\end{itemize}
+
+\begin{figure}[htbp] \centering
+	\includegraphics[width=\textwidth,height=.65\textheight,keepaspectratio]{./img/reqtec.png}
+	\caption{Parte da matriz de rastreabilidade de requisitos e técnicas}
+	\label{fig:reqtec}
+\end{figure}
+
+\end{frame}
+
 \subsection[Limitações]{Limitações}
+
+\begin{frame}
+\frametitle{Limitações da Prova de Conceito}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Utilização do MTA em ambientes de produção
+  \item Volume de dados relativamente pequeno
+  \item Falta de um especialista em acessibilidade
+  \item Mensagens recuperadas diretamente da ontologia
+  \item Dificuladde na alteração do documento (WCAG 2.0)
+  \item Remoção de requisitos/modelos em etapas avançadas (como proceder?)
+\end{itemize}
+
+\end{frame}
+
+\subsection[Conclusões da Prova de Conceito]{Conclusões da Prova de Conceito}
+
+\begin{frame}
+\frametitle{Conclusões da Prova de Conceito}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Ferramenta orientada ao desenvolvedor
+  \item Ferramenta integrada ao ambiente de desenvolvimento
+  \item Ferramenta que apresente informações objetivas e no momento desejado
+  \item Ferramenta que tenha relação direta entre os requisitos e casos de uso com a etapa de codificação
+  \item Ferramenta que rastreaia os requisitos de acessibilidade, desde a sua concepção até as fases de codificação
+  \item Ferramenta que permite verificar, em nível de código, a associação dos requisitos e modelos
+\end{itemize}
+
+\end{frame}
 
 \section{Conclusões}
 
 \subsection[Contribuições]{Contribuições}
 
+\begin{frame}
+\frametitle{Contribuições}
+\framesubtitle{}
+
+\begin{itemize}
+  \item Rastreabilidade de requisitos de acessibilidade durante o processo de desenvolvimento de software
+  \item Especificação, antes das fases de codificação e vinculadas aos modelos e requisitos de acessibilidade, as técnicas de implementação
+  \item Apresentação de várias possibilidades para a execução
+  \item Escolha de uma, através da construção de uma ferramenta CASE (\textit{plugin AccTrace})
+  \item Possibilidade de utilização da mesma abordagem em outros domínios
+\end{itemize}
+
+\end{frame}
+
 \subsection[Trabalhos Futuros]{Trabalhos Futuros}
+
+ \begin{frame}[allowframebreaks]
+ \frametitle{Trabalhos Futuros}
+ \framesubtitle{}
+ 
+ \begin{itemize}
+  \item Efetuar um estudo de caso com um projeto real, que utilize o MTA e use os plugins
+ aqui elencados, inclusive os plugins construídos e customizados para promover a rastreabilidade e geração de código
+   \item Efetuar um estudo de caso com usuários reais, utilizando o software construido no item anterior e avaliar a acessibilidade do mesmo
+   \item Estudar a utilização de métodos dinâmicos de rastreabilidades dos requisitos
+   \item Efetuar o mapeamento da ontologia para outros documentos de referência em acessibilidade, por exemplo, eMag 3.0
+   \item Aumentar a usabilidade dos plugins construídos/modificados, melhorando as mensagens apresentadas, aproveitando o relacionamento da ontologia do projeto
+   \item Estender o escopo deste trabalho, incluindo tarefas de testes e integração do software e do sistema (Subtarefas 7, 8, 9 e 10 do MTA)
+   \item Tratar o caso de remoção de requisitos/modelos UML já relacionados no modelo \textit{AccTrace}
+   \item Estender a matriz de rastreabilidade dos requisitos aqui construída, para incluir os casos de testes descritos no item anterior
+   \item Utilizar outro domínio de interesse como base para os estudos futuros, como por exemplo usabilidade de software 
+
+\end{itemize}
+\end{frame}
 
 \section{Referências Bibliográficas}
 
